@@ -1,6 +1,10 @@
 # GC2USB
 This is a simple Adapter made from just an Arduino Pro Micro to use Gamecube controllers natively on PC using XInput.
 
+<p align="center">
+  <img width="240" height="320" src="https://github.com/smsry/GC2USB/blob/main/Images/1.jpg">
+</p>
+
 Allows a Gamecube controller to show up as an Xbox Controller on Windows(or any device really) with Rumble Support!
 
 - Uses Nicohood's Nintendo Library to get data from the Gamecube controller's 3.3v logic pin
