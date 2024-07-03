@@ -22,7 +22,7 @@ As this acts as an Xbox Controller, it can also be used in any Game that accepts
  ### Things to Note:
 
 - As the GC Controller just has one vibration motor, and a typical Xinput setup requires a Big motor and a small motor, you can choose to send only the big motor's signal to the GC Controller, or both. I just chose both as I didnt know how choosing one over the other would effect Rumble in Dolphin.
-- Another thing regarding Vibration, because the Nintendo Library just uses a bool value for Controller Rumble, there isnt ant PWM modulation going to the motor, so the motor will vibrate at full 5v all the time.
+- Another thing regarding Vibration, because the Nintendo Library just uses a bool value for Controller Rumble, there isnt any PWM modulation going to the motor, so the motor will vibrate at full 5v all the time.
 - Also MAKE SURE YOU WIRE A SEPERATE GROUND IF YOU WANT RUMBLE TO WORK. learned this the hard way but the grounds in a Gamecube controller are'nt common. One of them is exclusively used for Rumble. For me it was the White wire, could be different depending on the controller
 - Because the way the Gamecube controller has analog Triggers as well as buttons, that's not exactly possible with XInput as you have an option of either choosing Triggers as buttons or analog. For this project I chose to just use the Analog values of triggers and set that to LT and RT. the trigger buttons dont do anything, but feel free to change that as per requirement.
 - The source files has a wiring diagram in it that i followed pretty closely. the only thing thats different is an additional wire has to be connected from the Pro Micro's ground to GC Controller's Rumble ground(white wire on some controllers)
